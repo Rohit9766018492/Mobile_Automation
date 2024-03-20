@@ -1,0 +1,12 @@
+com\allure\AllureReport.class
+com\appium\BaseTestAndroidAppium.class
+org\locatorsandmethods\CalculatorLocatorsAndMethods.class
+com\utilities\ListenerTest.class
+com\utilities\GenerateAllureReport.class
+com\utilities\ReadConfig.class
+com\utilities\ReportUtils.class
+com\entities\Device.class
+com\utilities\DeviceScreenShots.class
+com\allure\XmlSuiteNames.class
+org\locatorsandmethods\GoogleNewsLocatorsAndMethods.class
+com\utilities\DeviceRepo.class

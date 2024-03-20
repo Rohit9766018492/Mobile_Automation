@@ -1,0 +1,251 @@
+# Created at 2024-03-14T19:09:10.939
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+# Created at 2024-03-14T19:09:16.555
+Unexpected IOException with stream: [INFO ] 2024-03-14 19:09:16.553 [main] BaseTestAndroidAppium - ------- Waiting for : 2.0 seconds -------
+
+
+# Created at 2024-03-14T19:09:18.567
+Unexpected IOException with stream: [INFO ] 2024-03-14 19:09:18.566 [main] BaseTestAndroidAppium - ------- Change Device Orientation from Landscape to Portrait -------
+
+
+# Created at 2024-03-14T19:09:19.985
+Unexpected IOException with stream: ---- TestNGListener onTestSuccess ---- launchGoogleNewsApplication
+
+
+# Created at 2024-03-14T19:09:19.986
+Unexpected IOException: 6,1,com.test.GoogleNewsTest,launchGoogleNewsApplication(com.test.GoogleNewsTest),null,null,null
+
+
+# Created at 2024-03-14T19:09:20.205
+Unexpected IOException with stream: [INFO ] 2024-03-14 19:09:20.205 [main] BaseTestAndroidAppium - !!!!!!! Application Ended Successfully !!!!!!!
+
+
+# Created at 2024-03-14T19:09:20.538
+Unexpected IOException with stream: ===== Invoked methods
+
+
+# Created at 2024-03-14T19:09:20.539
+Unexpected IOException with stream:   
+
+# Created at 2024-03-14T19:09:20.541
+Unexpected IOException with stream: BaseTestAndroidAppium.launchAndroidApplications()[pri:0, instance:com.test.GoogleNewsTest@37d871c2] 936931778
+
+
+# Created at 2024-03-14T19:09:20.542
+Unexpected IOException with stream:     
+
+# Created at 2024-03-14T19:09:20.543
+Unexpected IOException with stream: GoogleNewsTest.launchGoogleNewsApplication()[pri:0, instance:com.test.GoogleNewsTest@37d871c2] 936931778
+
+
+# Created at 2024-03-14T19:09:20.544
+Unexpected IOException with stream:   
+
+# Created at 2024-03-14T19:09:20.545
+Unexpected IOException with stream: BaseTestAndroidAppium.tearDown()[pri:0, instance:com.test.GoogleNewsTest@37d871c2] 936931778
+
+
+# Created at 2024-03-14T19:09:20.546
+Unexpected IOException with stream: =====
+
+
+# Created at 2024-03-14T19:09:20.547
+Unexpected IOException with stream: ---- TestNGListener onFinish ---- Google News
+
+
+# Created at 2024-03-14T19:09:20.592
+Unexpected IOException with stream: PASSED: launchGoogleNewsApplication
+        01. Application Google New Launch Successfully
+
+# Created at 2024-03-14T19:09:20.594
+Unexpected IOException with stream: 
+
+
+# Created at 2024-03-14T19:09:20.596
+Unexpected IOException with stream: 
+===============================================
+    Google News
+    Tests run: 1, Failures: 0, Skips: 0
+===============================================
+
+
+# Created at 2024-03-14T19:09:20.597
+Unexpected IOException with stream: 
+
+
+# Created at 2024-03-14T19:09:20.617
+Unexpected IOException with stream: 
+===============================================
+Google News Test
+Total tests run: 1, Passes: 1, Failures: 0, Skips: 0
+===============================================
+
+
+
+# Created at 2024-03-14T19:09:20.618
+Unexpected IOException with stream: ---- TestNGListener onStart ---- Google News 1
+
+
+# Created at 2024-03-14T19:09:25.889
+Unexpected IOException with stream: Mar 14, 2024 7:09:25 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+
+
+# Created at 2024-03-14T19:09:25.979
+Unexpected IOException with stream: [INFO ] 2024-03-14 19:09:25.978 [main] BaseTestAndroidAppium - !!!!!!! Application Started Successfully !!!!!!!
+
+
+# Created at 2024-03-14T19:09:25.981
+Unexpected IOException with stream: ---- TestNGListener onTestStart ---- launchGoogleNewsApplication
+
+
+# Created at 2024-03-14T19:09:25.982
+Unexpected IOException: 5,1,com.test.GoogleNewsTest1,launchGoogleNewsApplication(com.test.GoogleNewsTest1),com.test.GoogleNewsTest1,null,null
+
+
+# Created at 2024-03-14T19:09:25.985
+Unexpected IOException with stream: [INFO ] 2024-03-14 19:09:25.984 [main] BaseTestAndroidAppium - ------- Waiting for : 2.0 seconds -------
+
+
+# Created at 2024-03-14T19:09:29.547
+Unexpected IOException with stream: [INFO ] 2024-03-14 19:09:29.545 [main] BaseTestAndroidAppium - ---- Allow the Google Notification ----
+
+
+# Created at 2024-03-14T19:09:29.550
+Unexpected IOException with stream: [INFO ] 2024-03-14 19:09:29.548 [main] BaseTestAndroidAppium - ------- Perform Click on given element -------
+
+
+# Created at 2024-03-14T19:09:30.970
+Unexpected IOException with stream: ---- TestNGListener onTestSuccess ---- launchGoogleNewsApplication
+
+
+# Created at 2024-03-14T19:09:30.973
+Unexpected IOException: 6,1,com.test.GoogleNewsTest1,launchGoogleNewsApplication(com.test.GoogleNewsTest1),null,null,null
+
+
+# Created at 2024-03-14T19:09:30.981
+Unexpected IOException with stream: [INFO ] 2024-03-14 19:09:30.979 [main] BaseTestAndroidAppium - !!!!!!! Application Ended Successfully !!!!!!!
+
+
+# Created at 2024-03-14T19:09:31.493
+Unexpected IOException with stream: ===== Invoked methods
+
+
+# Created at 2024-03-14T19:09:31.494
+Unexpected IOException with stream:   
+
+# Created at 2024-03-14T19:09:31.496
+Unexpected IOException with stream: BaseTestAndroidAppium.launchAndroidApplications()[pri:0, instance:com.test.GoogleNewsTest1@341672e] 54617902
+
+
+# Created at 2024-03-14T19:09:31.497
+Unexpected IOException with stream:     
+
+# Created at 2024-03-14T19:09:31.499
+Unexpected IOException with stream: GoogleNewsTest1.launchGoogleNewsApplication()[pri:0, instance:com.test.GoogleNewsTest1@341672e] 54617902
+
+
+# Created at 2024-03-14T19:09:31.500
+Unexpected IOException with stream:   
+
+# Created at 2024-03-14T19:09:31.501
+Unexpected IOException with stream: BaseTestAndroidAppium.tearDown()[pri:0, instance:com.test.GoogleNewsTest1@341672e] 54617902
+
+
+# Created at 2024-03-14T19:09:31.503
+Unexpected IOException with stream: =====
+
+
+# Created at 2024-03-14T19:09:31.504
+Unexpected IOException with stream: ---- TestNGListener onFinish ---- Google News 1
+
+
+# Created at 2024-03-14T19:09:31.510
+Unexpected IOException with stream: PASSED: launchGoogleNewsApplication
+        01. Application Google New Launch Successfully
+
+# Created at 2024-03-14T19:09:31.512
+Unexpected IOException with stream: 
+
+
+# Created at 2024-03-14T19:09:31.514
+Unexpected IOException with stream: 
+===============================================
+    Google News 1
+    Tests run: 1, Failures: 0, Skips: 0
+===============================================
+
+
+# Created at 2024-03-14T19:09:31.515
+Unexpected IOException with stream: 
+
+
+# Created at 2024-03-14T19:09:31.520
+Unexpected IOException with stream: 
+===============================================
+Google News Test 1 (0)
+Total tests run: 1, Passes: 1, Failures: 0, Skips: 0
+===============================================
+
+
+
+# Created at 2024-03-14T19:09:31.523
+Unexpected IOException with stream: 
+===============================================
+Google News Test 1
+Total tests run: 2, Passes: 2, Failures: 0, Skips: 0
+===============================================
+
+
+
+# Created at 2024-03-14T19:09:31.650
+Unexpected IOException with stream: [INFO ] 2024-03-14 19:09:31.643 [main] AllureReport - ------- List of folders is :: [1, 10, 2, 3, 4, 5, 6, 7, 8, 9] -------
+
+
+# Created at 2024-03-14T19:09:31.653
+Unexpected IOException with stream: [INFO ] 2024-03-14 19:09:31.650 [main] AllureReport - ------- Highest folder number is :: 10 -------
+
+
+# Created at 2024-03-14T19:09:31.654
+Unexpected IOException with stream: [INFO ] 2024-03-14 19:09:31.653 [main] AllureReport - ------- New folder number is :: 11 -------
+
+
+# Created at 2024-03-14T19:09:31.655
+Unexpected IOException with stream: allure Report Path: D:\allure-reports\11
+
+
+# Created at 2024-03-14T19:09:31.656
+Unexpected IOException with stream: [INFO ] 2024-03-14 19:09:31.655 [main] AllureReport - ------- Your new folder has been created successfully -------
+
+
+# Created at 2024-03-14T19:09:31.660
+Unexpected IOException with stream: [INFO ] 2024-03-14 19:09:31.657 [main] AllureReport - ------- Serving allure report -------
+
+
+# Created at 2024-03-14T19:09:31.676
+Unexpected IOException with stream: [INFO ] 2024-03-14 19:09:31.675 [main] BaseTestAndroidAppium - ------- Waiting for : 10.0 seconds -------
+
+
+# Created at 2024-03-14T19:09:41.694
+Unexpected IOException with stream: [INFO ] 2024-03-14 19:09:41.693 [main] AllureReport - ------- Generate allure report -------
+
+
+# Created at 2024-03-14T19:09:42.137
+Unexpected IOException with stream: [INFO ] 2024-03-14 19:09:42.136 [main] AllureReport - ------- Allure report ID is : D:\allure-reports\11\allure_report.html -------
+
+
+# Created at 2024-03-14T19:09:42.146
+Unexpected IOException with stream: Path: C:\Project\blendin_ios_automation\reportMessage.html
+
+
+# Created at 2024-03-14T19:09:42.242
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGXmlTestSuite,TestSuite,null,null,null
+
+

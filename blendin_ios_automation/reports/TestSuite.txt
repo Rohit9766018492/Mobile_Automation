@@ -1,0 +1,39 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 85.255 s <<< FAILURE! - in TestSuite
+testSearchFunctionality(com.test.GoogleNewsTest)  Time elapsed: 1.668 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MA390', ip: '169.254.163.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {automationName: UiAutomator2, databaseEnabled: false, desired: {automationName: UiAutomator2, deviceName: Pixel 4, platformName: android, platformVersion: 13, udid: 9A201FFAZ00127}, deviceApiLevel: 33, deviceManufacturer: Google, deviceModel: Pixel 4, deviceName: 9A201FFAZ00127, deviceScreenDensity: 440, deviceScreenSize: 1080x2280, deviceUDID: 9A201FFAZ00127, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 83, takesScreenshot: true, udid: 9A201FFAZ00127, viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 0d7a9d8d-1428-4ea4-a416-ffbeeb1e6443
+*** Element info: {Using=xpath, value=//android.widget.ImageButton[@content-desc="Navigate up"]}
+	at com.test.GoogleNewsTest.testSearchFunctionality(GoogleNewsTest.java:45)
+
+swipeRight(com.test.GoogleNewsTest)  Time elapsed: 1.263 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MA390', ip: '169.254.163.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {automationName: UiAutomator2, databaseEnabled: false, desired: {automationName: UiAutomator2, deviceName: Pixel 4, platformName: android, platformVersion: 13, udid: 9A201FFAZ00127}, deviceApiLevel: 33, deviceManufacturer: Google, deviceModel: Pixel 4, deviceName: 9A201FFAZ00127, deviceScreenDensity: 440, deviceScreenSize: 1080x2280, deviceUDID: 9A201FFAZ00127, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 83, takesScreenshot: true, udid: 9A201FFAZ00127, viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 0d7a9d8d-1428-4ea4-a416-ffbeeb1e6443
+*** Element info: {Using=xpath, value=//android.widget.ImageButton[@content-desc="Navigate up"]}
+	at com.test.GoogleNewsTest.swipeRight(GoogleNewsTest.java:58)
+
+verifyClickOnSuggestionAfterSearchingText(com.test.GoogleNewsTest1)  Time elapsed: 1.402 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. Original error: org.eclipse.wst.xml.xpath2.processor.internal.StaticNsNameError: Unknown prefix: com.google.android.apps.magazines.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MA390', ip: '169.254.163.251', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {automationName: UiAutomator2, databaseEnabled: false, desired: {automationName: UiAutomator2, deviceName: Pixel 4, platformName: android, platformVersion: 13, udid: 9A201FFAZ00127}, deviceApiLevel: 33, deviceManufacturer: Google, deviceModel: Pixel 4, deviceName: 9A201FFAZ00127, deviceScreenDensity: 440, deviceScreenSize: 1080x2280, deviceUDID: 9A201FFAZ00127, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 83, takesScreenshot: true, udid: 9A201FFAZ00127, viewportRect: {height: 2197, left: 0, top: 83, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: f27c9098-0b8c-44d2-b42c-a31adf2c77c4
+*** Element info: {Using=xpath, value=com.google.android.apps.magazines:id/open_search_view_edit_text}
+	at com.test.GoogleNewsTest1.verifyClickOnSuggestionAfterSearchingText(GoogleNewsTest1.java:35)
+

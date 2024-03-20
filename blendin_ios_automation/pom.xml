@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>blendin_ios_automation</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.version>3.7.0</maven.compiler.version>
+        <maven.resource.version>3.0.2</maven.resource.version>
+        <maven.surefire.version>2.22.0</maven.surefire.version>
+
+        <java.compliler.version>1.8</java.compliler.version>
+        <aspectj.version>1.8.10</aspectj.version>
+        <allure.version>2.14.0</allure.version>
+
+        <config>local</config>
+        <skipMail>false</skipMail>
+        <allure.plugin.version>2.5</allure.plugin.version>
+        <allure.results.directory>${project.basedir}/allure-results</allure.results.directory>
+
+<!--        <tms>-->
+<!--            https://testrail.rim.net/index.php?/cases/view/%s-->
+<!--        </tms>-->
+<!--        <issues.tracker>-->
+<!--            https://jira.bbqnx.net/browse/%s-->
+<!--        </issues.tracker>-->
+    </properties>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.0.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+        <dependency>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>7.0.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.141.59</version>
+<!--            <version>4.18.1</version>-->
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.17.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.17.1</version> <!-- Use the latest version available -->
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>2.13.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectj.version}</version>
+        </dependency>
+
+    </dependencies>
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <build>
+        <testResources>
+            <testResource>
+                <directory>src/test/resources</directory>
+                <filtering>true</filtering>
+            </testResource>
+        </testResources>
+        <filters>
+            <filter>src/main/resources/config.properties</filter> <!--Also fetch path from jenkins if any-->
+        </filters>
+
+        <plugins>
+            <plugin>
+                <!-- +++++++++++++ Maven Clean Plugin +++++++++++++ Report Message -->
+                <!--suppress MavenModelInspection -->
+                <artifactId>maven-clean-plugin</artifactId>
+                <!--suppress MavenModelInspection -->
+                <version>3.1.0</version>
+                <configuration>
+                    <filesets>
+                        <fileset>
+                            <directory>./</directory>
+                            <includes>
+                                <include>reportMessage.html</include>>
+                            </includes>
+                        </fileset>
+                    </filesets>
+                    <followSymLinks>false</followSymLinks>
+                    <failOnError>false</failOnError>
+                </configuration>
+            </plugin>
+            <!-- +++++++++++++ Maven Clean Plugin +++++++++++++ Report Message Generated -->
+
+            <!-- +++++++++++++ Maven Compiler Plugin +++++++++++++ -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.version}</version>
+                <configuration>
+                    <source>${java.compliler.version}</source>
+                    <target>${java.compliler.version}</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>${maven.resource.version}</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven.surefire.version}</version>
+                <configuration>
+                    <testFailureIgnore>true</testFailureIgnore>
+                    <!--				</configuration>-->
+                    <!--				<configuration>-->
+                    <!--<forkCount>10</forkCount>-->
+                    <reuseForks>true</reuseForks>
+                    <systemPropertyVariables>
+                        <org.uncommons.reportng.escape-output>false</org.uncommons.reportng.escape-output>
+                        <org.uncommons.reportng.title>Test Results for Android App</org.uncommons.reportng.title>
+<!--                        <config>${config}</config>-->
+                        <reporter.debug>false</reporter.debug>
+                    </systemPropertyVariables>
+                    <properties>
+                        <property>
+                            <name>listener</name>
+                            <value>
+                                com.utilities.GenerateAllureReport,
+                                com.allure.XmlSuiteNames
+                            </value>
+                        </property>
+                        <property>
+                            <name>surefire.testng.verbose</name>
+                            <value>3</value>
+                        </property>
+                    </properties>
+                    <reportsDirectory>${project.basedir}/reports</reportsDirectory>
+                    <workingDirectory>${project.basedir}</workingDirectory>
+                    <suiteXmlFiles>
+                        <!--suppress UnresolvedMavenProperty -->
+                        <suiteXmlFile>${project.basedir}/testng-suites/${suiteXmlFile}</suiteXmlFile>
+                    </suiteXmlFiles>
+                    <argLine>
+                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                    </argLine>
+                    <testFailureIgnore>true</testFailureIgnore>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>ch.fortysix</groupId>
+                <artifactId>maven-postman-plugin</artifactId>
+                <version>0.1.6</version>
+                <executions>
+                    <execution>
+                        <id>send a mail</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>send-mail</goal>
+                        </goals>
+                        <inherited>false</inherited>
+                        <configuration>
+                            <skip>${skipMail}</skip>
+
+                            <mailhost>smtp.gmail.com</mailhost>
+                            <mailport>465</mailport>
+                            <mailssl>true</mailssl>
+                            <mailAltConfig>true</mailAltConfig>
+                            <mailuser>rahul.ranpura@mplifytech.com</mailuser>
+                            <mailpassword>dshhfbbgayfoippg</mailpassword>
+
+                            <from>rahul.ranpura@mplifytech.com</from>
+                            <receivers>
+                                <!--QA team-->
+                                <receiver>rahul.sachania@mplifytech.com</receiver>
+                                <receiver>rohit.sawant@mplifytech.com</receiver>
+
+                            </receivers>
+                            <subject>Google News Android - Appium Automation</subject>
+                            <failonerror>true</failonerror>
+                            <htmlMessageFile>${project.basedir}/reportMessage.html</htmlMessageFile>
+                            <fileSets>
+                                <fileSet>
+                                    <directory>${basedir}
+                                    </directory>
+                                    <includes>
+                                        <include>allure-report/index.html</include>
+                                        <include>reports/emailable-report.html</include>
+                                    </includes>
+                                </fileSet>
+                            </fileSets>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.10.0</version>
+                <configuration>
+                    <resultsDirectory>${allure.results.directory}</resultsDirectory>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+                <version>2.15</version>
+            </plugin>
+
+        </plugins>
+
+    </build>
+
+    <reporting>
+        <excludeDefaults>true</excludeDefaults>
+        <plugins>
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.10.0</version>
+                <configuration>
+                    <properties>
+                        <allure.results.directory>${allure.results.directory}</allure.results.directory>
+                    </properties>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
+
+</project>

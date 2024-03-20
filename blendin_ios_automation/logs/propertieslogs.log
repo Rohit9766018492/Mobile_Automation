@@ -1,0 +1,54 @@
+[INFO ] 2024-03-20 15:55:50.095 [main] BaseTestAndroidAppium - !!!!!!! Android Driver Session Started Successfully !!!!!!!
+[INFO ] 2024-03-20 15:55:50.104 [main] BaseTestAndroidAppium - ---- Fetching Details of Suite ----
+[INFO ] 2024-03-20 15:55:50.454 [main] BaseTestAndroidAppium - ------- Waiting for : 2.0 seconds -------
+[INFO ] 2024-03-20 15:55:52.630 [main] BaseTestAndroidAppium - ------- Waiting for : 2.0 seconds -------
+[INFO ] 2024-03-20 15:55:55.501 [main] BaseTestAndroidAppium - ALERT IS NOT PRESENT !! 
+[INFO ] 2024-03-20 15:55:55.502 [main] BaseTestAndroidAppium - ALERT IS NOT PRESENT !!
+[INFO ] 2024-03-20 15:55:55.502 [main] BaseTestAndroidAppium - ------- Waiting for : 2.0 seconds -------
+[INFO ] 2024-03-20 15:55:57.503 [main] BaseTestAndroidAppium - ------- Checking for element ID is enabled -------
+[INFO ] 2024-03-20 15:55:58.168 [main] BaseTestAndroidAppium - ------- Waiting for : 2.0 seconds -------
+[INFO ] 2024-03-20 15:56:00.177 [main] BaseTestAndroidAppium - ------- Checking for element XPATH is enabled -------
+[INFO ] 2024-03-20 15:56:01.702 [main] BaseTestAndroidAppium - ------- Waiting for : 2.0 seconds -------
+[INFO ] 2024-03-20 15:56:03.711 [main] BaseTestAndroidAppium - ------- Checking for element XPATH is enabled -------
+[INFO ] 2024-03-20 15:56:04.133 [main] BaseTestAndroidAppium - ---- Clicking on element after finding it by scrolling ----
+[INFO ] 2024-03-20 15:56:04.133 [main] BaseTestAndroidAppium - ------- Waiting for : 2.0 seconds -------
+[INFO ] 2024-03-20 15:56:06.140 [main] BaseTestAndroidAppium - ------- Waiting for : 2.0 seconds -------
+[INFO ] 2024-03-20 15:56:08.148 [main] BaseTestAndroidAppium - ------- Checking for element XPATH is enabled -------
+[INFO ] 2024-03-20 15:56:08.591 [main] BaseTestAndroidAppium - ------- Start Scrolling Up -------
+[INFO ] 2024-03-20 15:56:09.026 [main] BaseTestAndroidAppium - ------- End Scrolling Up -------
+[INFO ] 2024-03-20 15:56:09.027 [main] BaseTestAndroidAppium - !!!! Element NOT Found !!!!
+[INFO ] 2024-03-20 15:56:09.027 [main] BaseTestAndroidAppium - ------- Waiting for : 2.0 seconds -------
+[INFO ] 2024-03-20 15:56:11.034 [main] BaseTestAndroidAppium - ------- Checking for element XPATH is enabled -------
+[INFO ] 2024-03-20 15:56:11.465 [main] BaseTestAndroidAppium - ------- Start Scrolling Up -------
+[INFO ] 2024-03-20 15:56:11.887 [main] BaseTestAndroidAppium - ------- End Scrolling Up -------
+[INFO ] 2024-03-20 15:56:11.888 [main] BaseTestAndroidAppium - !!!! Element NOT Found !!!!
+[INFO ] 2024-03-20 15:56:11.888 [main] BaseTestAndroidAppium - ------- Waiting for : 2.0 seconds -------
+[INFO ] 2024-03-20 15:56:13.892 [main] BaseTestAndroidAppium - ------- Checking for element XPATH is enabled -------
+[INFO ] 2024-03-20 15:56:14.379 [main] BaseTestAndroidAppium - ------- Perform Click on given element -------
+[INFO ] 2024-03-20 15:56:14.817 [main] BaseTestAndroidAppium - !!!! Element Found and Clicked Successfully !!!!
+[INFO ] 2024-03-20 15:56:14.826 [main] BaseTestAndroidAppium - ------- Perform Click on given element -------
+[INFO ] 2024-03-20 15:56:16.524 [main] BaseTestAndroidAppium - ------- Perform Click on given element -------
+[INFO ] 2024-03-20 15:56:23.644 [main] BaseTestAndroidAppium - !!!!!!! Android Driver Session Started Successfully !!!!!!!
+[INFO ] 2024-03-20 15:56:23.645 [main] BaseTestAndroidAppium - ---- Fetching Details of Suite ----
+[INFO ] 2024-03-20 15:56:23.658 [main] BaseTestAndroidAppium - ------- Waiting for : 2.0 seconds -------
+[INFO ] 2024-03-20 15:56:26.147 [main] BaseTestAndroidAppium - ------- Waiting for : 2.0 seconds -------
+[INFO ] 2024-03-20 15:56:29.023 [main] BaseTestAndroidAppium - ALERT IS NOT PRESENT !! 
+[INFO ] 2024-03-20 15:56:29.023 [main] BaseTestAndroidAppium - ALERT IS NOT PRESENT !!
+[INFO ] 2024-03-20 15:56:29.023 [main] BaseTestAndroidAppium - ------- Perform Click on given element -------
+[INFO ] 2024-03-20 15:56:31.761 [main] BaseTestAndroidAppium - ------- Waiting for : 2.0 seconds -------
+[INFO ] 2024-03-20 15:56:33.774 [main] BaseTestAndroidAppium - ------- Passing text news in text field -------
+[INFO ] 2024-03-20 15:56:33.774 [main] BaseTestAndroidAppium - ------- Waiting for : 2.0 seconds -------
+[INFO ] 2024-03-20 15:56:36.613 [main] BaseTestAndroidAppium - ---->>>> Entering Text into search bar: news <<<<----
+[INFO ] 2024-03-20 15:56:36.613 [main] BaseTestAndroidAppium - ------- Waiting for : 2.0 seconds -------
+[INFO ] 2024-03-20 15:56:38.619 [main] BaseTestAndroidAppium - ---- Clicking Enter ----
+[INFO ] 2024-03-20 15:56:38.754 [main] BaseTestAndroidAppium - ------- Waiting for : 5.0 seconds -------
+[INFO ] 2024-03-20 15:56:43.776 [main] BaseTestAndroidAppium - ------- Perform Click on given element -------
+[INFO ] 2024-03-20 15:56:45.899 [main] AllureReport - ------- Start Collecting Build Details -------
+[INFO ] 2024-03-20 15:56:45.934 [main] AllureReport - ------- List of folders is :: [1, 2] -------
+[INFO ] 2024-03-20 15:56:45.935 [main] AllureReport - ------- Highest folder number is :: 2 -------
+[INFO ] 2024-03-20 15:56:45.935 [main] AllureReport - ------- New folder number is :: 3 -------
+[INFO ] 2024-03-20 15:56:45.954 [main] AllureReport - ------- Your new folder has been created successfully -------
+[INFO ] 2024-03-20 15:56:45.954 [main] AllureReport - ------- Serving allure report -------
+[INFO ] 2024-03-20 15:56:45.965 [main] BaseTestAndroidAppium - ------- Waiting for : 10.0 seconds -------
+[INFO ] 2024-03-20 15:56:55.972 [main] AllureReport - ------- Generate allure report -------
+[INFO ] 2024-03-20 15:56:56.408 [main] AllureReport - ------- Allure report ID is : D:\allure-reports\3\allure_report.html -------

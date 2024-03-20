@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Google News Test 1">
+    <test name="Google News 1">
+        <classes>
+            <class name="com.test.GoogleNewsTest1">
+                <methods>
+                    <include name="launchGoogleNewsApplication1"/>
+                    <include name="verifyClickOnSuggestionAfterSearchingText"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
